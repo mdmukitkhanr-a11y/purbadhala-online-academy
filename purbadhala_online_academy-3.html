@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="পূর্বধলা অনলাইন একাডেমি — ১ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের জন্য অনলাইন শিক্ষা।">
+<title>পূর্বধলা অনলাইন একাডেমি</title>
+<style>
+:root{--navy:#123b70;--blue:#2468d7;--sky:#eaf3ff;--ink:#15233b;--muted:#61718a;--line:#e2eaf4;--green:#13875e;--gold:#ffcf70}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali","Nirmala UI",sans-serif;color:var(--ink);background:#f7faff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy);line-height:1.25}.logo{width:43px;height:43px;border-radius:13px;background:linear-gradient(145deg,#2468d7,#123b70);color:#fff;display:grid;place-items:center;font-size:23px}
+.brand small{display:block;font-size:11px;color:var(--muted);font-weight:600;margin-top:4px}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;font-weight:650;color:#3d4f69}nav a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 18px;font:inherit;font-weight:750;cursor:pointer;background:var(--blue);color:white;box-shadow:0 8px 20px #2468d725}.btn.secondary{background:#fff;color:var(--navy);border:1px solid #d7e4f5;box-shadow:none}.btn.small{padding:9px 13px;font-size:13px}
+.hero{padding:58px 0 42px;background:radial-gradient(circle at 85% 20%,#d7e9ff 0,transparent 32%),linear-gradient(135deg,#f6faff,#eaf3ff)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:38px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid #d7e6fb;border-radius:999px;padding:7px 12px;font-size:12px;color:var(--blue);font-weight:800}
+h1{font-size:clamp(32px,4.5vw,53px);line-height:1.22;letter-spacing:-1px;color:#102f5b;margin:18px 0}
+h1 span{color:var(--blue)}.lead{color:#526782;font-size:17px;max-width:560px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+.trust{display:flex;gap:18px;flex-wrap:wrap;color:#526782;font-size:13px;margin-top:22px}.trust b{color:var(--navy)}
+.hero-art{background:linear-gradient(145deg,#174b8e,#2878e9);border-radius:28px;padding:23px;min-height:330px;position:relative;overflow:hidden;color:white;box-shadow:0 22px 50px #174b8e28}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #ffffff35;border-radius:50%;width:270px;height:270px;right:-65px;top:-95px}.hero-art:after{width:190px;height:190px;right:-20px;top:-55px}
+.art-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;font-size:13px}.art-card{background:#fff;color:var(--ink);border-radius:19px;padding:20px;margin-top:38px;position:relative;z-index:1;box-shadow:0 12px 30px #092d6630}.art-icon{width:54px;height:54px;display:grid;place-items:center;border-radius:16px;background:#e9f2ff;font-size:28px}.art-card h3{margin:12px 0 4px;font-size:21px}.art-card p{margin:0;color:var(--muted);font-size:13px}.art-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.art-tags span{background:#eef5ff;border-radius:9px;padding:7px 10px;color:#285a9b;font-size:12px;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;position:relative;z-index:1}.stat{background:#ffffff18;border:1px solid #ffffff35;border-radius:14px;padding:12px}.stat strong{display:block;font-size:21px}.stat small{font-size:11px;color:#e0edff}
+section{padding:58px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 30px}.eyebrow{font-size:12px;letter-spacing:1.5px;color:var(--blue);font-weight:900;text-transform:uppercase}.section-head h2{font-size:clamp(26px,3vw,36px);color:var(--navy);margin:7px 0}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 7px 22px #183f6b08}.card:hover{transform:translateY(-2px);box-shadow:0 12px 30px #183f6b12;transition:.2s}.course-icon{width:49px;height:49px;border-radius:15px;background:var(--sky);display:grid;place-items:center;font-size:25px;margin-bottom:14px}.card h3{margin:0 0 7px;color:#183b6b;font-size:19px}.card p{color:var(--muted);font-size:14px;margin:0 0 15px}.card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #edf1f7;padding-top:13px;font-size:13px;color:var(--muted)}.tag{background:#eaf8f2;color:#13875e;padding:5px 9px;border-radius:999px;font-weight:800;font-size:11px}
+.features{background:#fff}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.feature{padding:20px;border-radius:16px;background:#f7faff;border:1px solid var(--line)}.feature .emoji{font-size:26px}.feature h3{font-size:16px;margin:10px 0 5px}.feature p{font-size:13px;color:var(--muted);margin:0}
+.exam{background:linear-gradient(135deg,#123b70,#1d62bd);color:white;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}.exam h2{font-size:27px;margin:0 0 8px}.exam p{color:#d8e8ff;margin:0}.exam .btn{background:#fff;color:#174783;box-shadow:none}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.about-panel{background:#eaf3ff;border-radius:22px;padding:26px}.check{display:flex;gap:10px;margin:12px 0;color:#3e536f;font-size:14px}.check b{color:var(--green)}
+form{display:grid;gap:12px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:13px;font-weight:750;color:#3e536f}input,select,textarea{width:100%;margin-top:5px;padding:12px;border:1px solid #d9e3f0;border-radius:10px;background:#fff;font:inherit;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid #b8d4ff;border-color:var(--blue)}.form-note{font-size:12px;color:var(--muted)}
+footer{background:#0e2d54;color:#e8f1ff;padding:35px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:25px}.footer-title{font-weight:850;font-size:18px}.footer-muted{color:#b9cce5;font-size:13px}.footer-links{display:grid;gap:8px;font-size:13px;color:#d7e6fa}.copyright{border-top:1px solid #ffffff20;margin-top:25px;padding-top:16px;font-size:12px;color:#b9cce5}
+.notice{display:none;background:#e9f8f1;color:#116748;border:1px solid #bfe8d7;padding:12px;border-radius:10px;font-size:14px}
+@media(max-width:800px){nav{display:none}.hero{padding:38px 0 30px}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-art{min-height:290px}.grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.exam{grid-template-columns:1fr}.exam .btn{justify-self:start}}
+@media(max-width:500px){.grid,.feature-grid,.form-grid,.footer-grid{grid-template-columns:1fr}.hero-art{padding:17px}.stats{gap:7px}.stat{padding:9px}.stat strong{font-size:18px}.stat small{font-size:10px}section{padding:43px 0}.nav{padding:10px 0}.brand{font-size:14px}.logo{width:38px;height:38px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">🎓</span><span>পূর্বধলা অনলাইন একাডেমি<small>শিখব আজ, গড়ব আগামীকাল</small></span></a>
+    <nav><a href="#courses">কোর্স</a><a href="#features">সুবিধা</a><a href="#exam">পরীক্ষা</a><a href="#about">আমাদের সম্পর্কে</a><a href="#admission">ভর্তি</a></nav>
+    <a class="btn small" href="#admission">ভর্তি আবেদন ↗</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="pill">✦ সবার জন্য শেখার সুযোগ</div>
+      <h1>পড়াশোনা হোক সহজ,<br><span>সাফল্য হোক নিশ্চিত</span></h1>
+      <p class="lead">প্রথম শ্রেণি থেকে দশম শ্রেণি পর্যন্ত শিক্ষার্থীদের জন্য বিষয়ভিত্তিক পাঠ, অনুশীলন ও পরীক্ষার একটি আধুনিক অনলাইন শিক্ষা উদ্যোগ।</p>
+      <div class="actions"><a class="btn" href="#courses">📚 কোর্স দেখুন</a><a class="btn secondary" href="#admission">ভর্তি সম্পর্কে জানুন</a></div>
+      <div class="trust"><span>✓ <b>সহজ পাঠ</b></span><span>✓ <b>যেকোনো সময় শেখা</b></span><span>✓ <b>মোবাইল উপযোগী</b></span></div>
+    </div>
+    <div class="hero-art">
+      <div class="art-top"><span>📘 তোমার শেখার যাত্রা</span><span>✦ একসাথে এগিয়ে চলি</span></div>
+      <div class="art-card">
+        <div class="art-icon">📖</div>
+        <h3>আজই শুরু করো</h3>
+        <p>নিয়মিত অনুশীলন ও সঠিক দিকনির্দেশনায় শেখার অভ্যাস গড়ে তোলো।</p>
+        <div class="art-tags"><span>বাংলা</span><span>ইংরেজি</span><span>গণিত</span><span>বিজ্ঞান</span></div>
+      </div>
+      <div class="stats"><div class="stat"><strong>১ম–৫ম</strong><small>প্রাথমিক স্তর</small></div><div class="stat"><strong>৬ষ্ঠ–৮ম</strong><small>মাধ্যমিক ভিত্তি</small></div><div class="stat"><strong>৯ম–১০ম</strong><small>SSC প্রস্তুতি</small></div></div>
+    </div>
+  </div>
+</section>
+<section id="courses">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">আমাদের শেখার বিভাগ</div><h2>তোমার শ্রেণি বেছে নাও</h2><p>শ্রেণি অনুযায়ী বিষয়ভিত্তিক পাঠের পরিকল্পনা। নিচের বিভাগগুলো প্রাথমিক নমুনা—কোর্সের কনটেন্ট পরে যোগ করা যাবে।</p></div>
+    <div class="grid">
+      <article class="card"><div class="course-icon">🧒</div><h3>প্রাথমিক শিক্ষা</h3><p>১ম–৫ম শ্রেণির বাংলা, ইংরেজি, গণিত ও প্রাথমিক বিজ্ঞান।</p><div class="card-foot"><span>১ম–৫ম শ্রেণি</span><a class="tag" href="#admission">আগ্রহী</a></div></article>
+      <article class="card"><div class="course-icon">📗</div><h3>মাধ্যমিক ভিত্তি</h3><p>৬ষ্ঠ–৮ম শ্রেণির বিষয়ভিত্তিক পাঠ, অনুশীলন ও অধ্যায় পর্যালোচনা।</p><div class="card-foot"><span>৬ষ্ঠ–৮ম শ্রেণি</span><a class="tag" href="#admission">আগ্রহী</a></div></article>
+      <article class="card"><div class="course-icon">🎯</div><h3>SSC প্রস্তুতি</h3><p>৯ম–১০ম শ্রেণির পাঠ পুনরালোচনা, প্রশ্ন অনুশীলন ও মডেল টেস্টের পরিকল্পনা।</p><div class="card-foot"><span>৯ম–১০ম শ্রেণি</span><a class="tag" href="#admission">আগ্রহী</a></div></article>
+    </div>
+  </div>
+</section>
+<section class="features" id="features">
+  <div class="wrap"><div class="section-head"><div class="eyebrow">শেখা হবে আরও সহজ</div><h2>একাডেমির পরিকল্পিত সুবিধা</h2><p>শিক্ষার্থীদের শেখার অভিজ্ঞতা উন্নত করার জন্য ধাপে ধাপে ফিচার যুক্ত করা হবে।</p></div>
+  <div class="feature-grid">
+    <div class="feature"><div class="emoji">🎥</div><h3>ভিডিও ক্লাস</h3><p>বিষয় ও অধ্যায় অনুযায়ী পাঠ দেখার ব্যবস্থা।</p></div>
+    <div class="feature"><div class="emoji">📝</div><h3>অনলাইন পরীক্ষা</h3><p>MCQ অনুশীলন, নম্বর ও ফলাফল দেখার সুবিধা।</p></div>
+    <div class="feature"><div class="emoji">📄</div><h3>নোট ও রিসোর্স</h3><p>অনুমতিপ্রাপ্ত PDF নোট ও অনুশীলনপত্র।</p></div>
+    <div class="feature"><div class="emoji">👩‍🏫</div><h3>শিক্ষক সহায়তা</h3><p>প্রশ্ন করা ও শেখার সমস্যায় নির্দেশনা পাওয়ার পরিকল্পনা।</p></div>
+  </div>
+  </div>
+</section>
+<section id="exam">
+  <div class="wrap"><div class="exam"><div><h2>অনুশীলনে বাড়ুক আত্মবিশ্বাস</h2><p>নিয়মিত কুইজ ও মডেল টেস্ট যুক্ত করে নিজের প্রস্তুতি যাচাই করার সুযোগ তৈরি হবে।</p></div><a class="btn" href="#admission">পরীক্ষার আপডেট চাই</a></div></div>
+</section>
+<section id="about">
+  <div class="wrap about-grid">
+    <div><div class="eyebrow">আমাদের লক্ষ্য</div><h2 style="font-size:32px;color:#123b70;margin:8px 0 14px">শিক্ষা পৌঁছে যাক সবার কাছে</h2><p style="color:#61718a">পূর্বধলা অনলাইন একাডেমির লক্ষ্য হলো শিক্ষার্থীদের জন্য সহজবোধ্য, সুশৃঙ্খল ও প্রযুক্তিনির্ভর শেখার পরিবেশ তৈরি করা। শুরুতে সীমিত কিছু কোর্স দিয়ে যাত্রা শুরু করে ধীরে ধীরে আরও সুবিধা যোগ করা হবে।</p><div class="check"><b>✓</b><span>শ্রেণি অনুযায়ী শেখার পরিকল্পনা</span></div><div class="check"><b>✓</b><span>মোবাইল ও কম্পিউটারে ব্যবহারযোগ্য</span></div><div class="check"><b>✓</b><span>শিক্ষার্থী ও অভিভাবকদের জন্য সহজ তথ্য</span></div></div>
+    <div class="about-panel"><div style="font-size:34px">🌱</div><h3 style="color:#123b70;font-size:22px;margin:10px 0">ছোট শুরু, বড় স্বপ্ন</h3><p style="color:#526782">প্রথমে একটি পরিচিতিমূলক ওয়েবসাইট, ভর্তি আগ্রহের ফরম এবং কিছু মানসম্মত পাঠ। পরে প্রয়োজন অনুযায়ী লগইন, ভিডিও লাইব্রেরি, পরীক্ষা ও অ্যাডমিন প্যানেল তৈরি করা যাবে।</p><a class="btn" href="#admission">যোগাযোগের আগ্রহ জানান</a></div>
+  </div>
+</section>
+<section id="admission" style="background:#f0f6ff">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">প্রাথমিক যোগাযোগ</div><h2>ভর্তির আগ্রহ জানান</h2><p>এই নমুনা ফরমটি এখনো কোনো সার্ভারে তথ্য পাঠায় না। প্রকাশের আগে এটিকে নিরাপদ ফরম বা যোগাযোগ ব্যবস্থার সঙ্গে যুক্ত করতে হবে।</p></div>
+    <div class="about-grid">
+      <div class="card">
+        <form id="interestForm">
+          <div class="form-grid">
+            <label>শিক্ষার্থীর নাম<input name="student" required placeholder="পূর্ণ নাম"></label>
+            <label>অভিভাবকের নাম<input name="guardian" placeholder="অভিভাবকের নাম"></label>
+          </div>
+          <div class="form-grid">
+            <label>শ্রেণি<select name="grade" required><option value="">শ্রেণি বেছে নাও</option><option>১ম শ্রেণি</option><option>২য় শ্রেণি</option><option>৩য় শ্রেণি</option><option>৪র্থ শ্রেণি</option><option>৫ম শ্রেণি</option><option>৬ষ্ঠ শ্রেণি</option><option>৭ম শ্রেণি</option><option>৮ম শ্রেণি</option><option>৯ম শ্রেণি</option><option>১০ম শ্রেণি</option></select></label>
+            <label>মোবাইল নম্বর<input name="phone" type="tel" inputmode="tel" required placeholder="01XXXXXXXXX" pattern="01[0-9]{9}"></label>
+          </div>
+          <label>কোন বিষয়ে আগ্রহী?<select name="subject"><option>সব বিষয়</option><option>বাংলা</option><option>ইংরেজি</option><option>গণিত</option><option>বিজ্ঞান</option><option>SSC প্রস্তুতি</option></select></label>
+          <button class="btn" type="submit">আগ্রহের তথ্য যাচাই করুন</button>
+          <div id="notice" class="notice" role="status"></div>
+          <div class="form-note">পরামর্শ: এখানে বাস্তব শিক্ষার্থীর ব্যক্তিগত তথ্য দেবেন না, যতক্ষণ না ফরমটি নিরাপদভাবে প্রকাশ করা হয়েছে।</div>
+        </form>
+      </div>
+      <div><h3 style="font-size:22px;color:#123b70;margin-top:0">পরবর্তী ধাপে যা লাগবে</h3><div class="check"><b>01</b><span>একাডেমির লোগো ও যোগাযোগের তথ্য চূড়ান্ত করা</span></div><div class="check"><b>02</b><span>শিক্ষক ও প্রথম দিকের কোর্সের কনটেন্ট প্রস্তুত করা</span></div><div class="check"><b>03</b><span>ভর্তি ফরমকে ইমেইল/স্প্রেডশিট বা ব্যাকএন্ডে সংযুক্ত করা</span></div><div class="check"><b>04</b><span>ভিডিও, কুইজ ও শিক্ষার্থী অ্যাকাউন্ট ধাপে ধাপে যুক্ত করা</span></div></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="footer-title">🎓 পূর্বধলা অনলাইন একাডেমি</div><p class="footer-muted">শিখব আজ, গড়ব আগামীকাল। শিক্ষার্থীদের জন্য সহজ ও সবার নাগালে অনলাইন শেখার উদ্যোগ।</p></div><div><div class="footer-title">দ্রুত লিংক</div><div class="footer-links"><a href="#courses">কোর্সসমূহ</a><a href="#features">সুবিধা</a><a href="#exam">পরীক্ষা</a><a href="#admission">ভর্তি আগ্রহ</a></div></div><div><div class="footer-title">যোগাযোগ</div><p class="footer-muted">প্রকাশের আগে এখানে একাডেমির অফিসিয়াল ফোন, ইমেইল ও ঠিকানা যোগ করুন।</p></div></div><div class="copyright">© <span id="year"></span> পূর্বধলা অনলাইন একাডেমি · প্রাথমিক ওয়েবসাইট ডেমো</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('interestForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const n=document.getElementById('notice');
+ n.style.display='block';
+ n.textContent='ফরমটি ঠিকভাবে পূরণ হয়েছে। এটি শুধু ডেমো—তথ্য কোথাও পাঠানো বা সংরক্ষণ করা হয়নি। প্রকাশের আগে নিরাপদ জমা দেওয়ার ব্যবস্থা যুক্ত করতে হবে।';
+});
+</script>
+</body>
+</html>

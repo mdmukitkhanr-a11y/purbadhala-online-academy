@@ -196,6 +196,22 @@ document.getElementById('interestForm').addEventListener('submit',function(e){
     Loading…
   </iframe>
 </section>
-  
+<script>
+document.getElementById('showLesson').addEventListener('click', function () {
+  const grade = document.getElementById('studyGrade').value;
+  const subject = document.getElementById('studySubject').value;
+
+  const lessons = {
+    'বাংলা': '<h3>বাংলা — নমুনা পাঠ</h3><p><b>বিষয়: বাক্য</b></p><p>মনের ভাব সম্পূর্ণভাবে প্রকাশ করে এমন শব্দসমষ্টিকে বাক্য বলে।</p><p>উদাহরণ: আমি স্কুলে যাই।</p>',
+    'ইংরেজি': '<h3>English — Sample Lesson</h3><p><b>Topic: Sentence</b></p><p>A sentence is a group of words that makes complete sense.</p><p>Example: I go to school.</p>',
+    'গণিত': '<h3>গণিত — নমুনা পাঠ</h3><p><b>বিষয়: যোগ</b></p><p>২ + ৩ = ৫</p><p>নিজে চেষ্টা করো: ৪ + ২ = কত?</p>'
+  };
+
+  document.getElementById('lessonBox').innerHTML =
+    '<p><b>নির্বাচিত শ্রেণি:</b> ' + grade + ' শ্রেণি</p>' +
+    lessons[subject] +
+    '<p style="color:#61718a;font-size:13px">এটি নমুনা পাঠ। প্রতিটি শ্রেণির উপযোগী পূর্ণ পাঠ পরে যোগ করা হবে।</p>';
+});
+</script>  
 </body>
 </html>
